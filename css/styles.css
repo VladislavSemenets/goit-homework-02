@@ -1,14 +1,20 @@
 .root {
+	--main-btn-text-color: #4d5ae5;
+	--secondary-title-color: #2e2f42;
 }
 
 .body {
 	font-family: "Roboto", sans-serif;
+	color: #434455;
 }
 .list {
 	list-style-type: none;
 }
 .link {
 	text-decoration: none;
+}
+.btn {
+	cursor: pointer;
 }
 /* -----HEADER------ */
 .header {
@@ -59,7 +65,6 @@
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
 }
 .header-link-adress:hover,
 .header-link-adress:focus {
@@ -121,7 +126,7 @@
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 .title-description {
 	font-size: 16px;
@@ -139,7 +144,7 @@
 	text-align: center;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 .works-list {
 }
@@ -168,14 +173,13 @@
 	line-height: 1.2;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 .team-subtitle {
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #434455;
 }
 /* ----FOOTER--- */
 .footer {
@@ -218,7 +222,7 @@
 }
 .filter-btn {
 	background: #f4f4fd;
-	color: #4d5ae5;
+	color: var(--main-btn-text-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -238,7 +242,7 @@
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 .links-description {
 	font-size: 16px;
