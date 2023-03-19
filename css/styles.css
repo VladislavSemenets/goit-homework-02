@@ -2,11 +2,40 @@
 	--main-btn-text-color: #4d5ae5;
 	--secondary-title-color: #2e2f42;
 	--background-btn-color: #404bbf;
+	--basic-margin: 24px;
 }
 
+h1,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
+}
+
+.container {
+	outline: 1px solid tomato;
+	max-width: 1128px;
+	width: 100%;
+	padding: 24px 15px;
+	margin: 0 auto;
+}
+img {
+	display: block;
+}
+.section {
 }
 button {
 }
@@ -21,8 +50,14 @@ button {
 }
 /* -----HEADER------ */
 .header {
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-nav {
+	display: flex;
+}
+.header-container {
+	display: flex;
 }
 .header-logo {
 	font-family: "Raleway", sans-serif;
@@ -30,6 +65,7 @@ button {
 	font-size: 18px;
 	line-height: 1.33;
 	text-transform: uppercase;
+	margin-right: 76px;
 	color: #2e2f42;
 }
 .header-logo > span {
@@ -42,6 +78,8 @@ button {
 	color: #4d5ae5;
 }
 .header-list {
+	display: flex;
+	gap: 40px;
 }
 .header-link {
 	font-weight: 500;
@@ -49,6 +87,7 @@ button {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
+	display: flex;
 }
 .header-link:hover,
 .header-link:focus {
@@ -56,22 +95,43 @@ button {
 }
 .header-item {
 }
+
 .header-adress {
+	margin-left: auto;
 }
 .header-list-adress {
 	font-style: normal;
+	display: flex;
+	outline: 1px solid tomato;
 }
 .header-item-adress {
 }
-.header-link-adress {
+
+.header-link-adress-mail {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: #434455;
+}
+.header-link-adress-tel {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #434455;
 }
-.header-link-adress:hover,
-.header-link-adress:focus {
+.header-link-adress-tel:hover,
+.header-link-adress-tel:focus {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--background-btn-color);
+}
+.header-link-adress-mail:hover,
+.header-link-adress-mail:focus {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
@@ -89,7 +149,8 @@ button {
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
-
+	margin-bottom: 48px;
+	width: 496px;
 	color: #ffffff;
 }
 .hero-btn {
@@ -119,9 +180,13 @@ button {
 .features {
 }
 .features-list {
+	display: flex;
+	gap: var(--basic-margin);
 }
 .features-item {
+	max-width: 264px;
 }
+
 .secondary-features-title {
 	font-weight: 500;
 	font-size: 20px;
